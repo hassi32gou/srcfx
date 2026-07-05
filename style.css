@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #02040a;
+    background-image: url('file:///C:/Users/syouhei/Downloads/0d692e8d-230e-4911-b112-4ac63d08a9b7.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 22px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(33, 150, 243, 0.4);
+    border-radius: 999px;
+    box-shadow: 0 0 32px rgba(33, 150, 243, 0.18), 0 16px 30px rgba(0, 0, 0, 0.25);
+}
+
+.logo::before {
+    content: "SRC";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #ffd600 0%, #ff6f00 100%);
+    color: #111;
+    font-weight: 800;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(255, 214, 0, 0.3);
+}
+
+.logo span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.logo-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+main {
+    padding-top: 0;
+}
+
+nav ul li {
+    position: relative;
+    padding: 8px 14px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 193, 7, 0.9), rgba(30, 136, 229, 0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0.6);
+}
+
+nav ul li:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 22px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(33, 150, 243, 0.4);
+    border-radius: 999px;
+    box-shadow: 0 0 32px rgba(33, 150, 243, 0.18), 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
+.logo::before {
+    content: "SRC";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #ffd600 0%, #ff6f00 100%);
+    color: #111;
+    font-weight: 800;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(255, 214, 0, 0.3);
+}
+
+.logo span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(1, 7, 18, 0.76), transparent 35%), linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 65%);
+    pointer-events: none;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(3rem, 5vw, 5.2rem);
+    letter-spacing: 0.16em;
+    line-height: 1.02;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(120deg, #ffd300, #ff5b2a, #7cafff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 180, 0, 0.15);
+}
+
+
+.stats { display: flex; gap: 26px; margin: 40px 0; flex-wrap: wrap; justify-content: center; }
+.stat-item {
+    position: relative;
+    width: 220px;
+    padding: 28px 24px;
+    border-radius: 26px;
+    color: #fffde7;
+    text-align: center;
+    background: rgba(12, 18, 31, 0.72);
+    border: 1px solid rgba(255, 215, 0, 0.24);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+.stat-item::before {
+    content: '✦';
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    font-size: 1.2rem;
+    color: rgba(255, 235, 150, 0.92);
+    opacity: 0.9;
+}
+.stat-item::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.08);
+}
+.stat-item span { display: block; position: relative; font-size: 2.3rem; font-weight: 900; text-shadow: 0 0 18px rgba(255, 215, 102, 0.65); }
+.stat-item p { position: relative; margin: 12px 0 0; font-size: 1rem; color: #f8e27f; opacity: 0.96; letter-spacing: 0.04em; }
+
+.info-box {
+    position: relative;
+    max-width: 860px;
+    margin-top: 28px;
+    padding: 30px 34px;
+    background: rgba(9, 14, 29, 0.82);
+    border: 1px solid rgba(255, 215, 0, 0.18);
+    border-radius: 26px;
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.45);
+}
+
+.info-box::before {
+    content: '注目！';
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    color: #111;
+    background: linear-gradient(135deg, #ffe082, #ffb300);
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+}
+
+.info-box h2 {
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+    color: #ffd54f;
+}
+
+.info-box p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 1.45rem;
+    color: #f5f5f5;
+}
+
+.cta-area {
+    margin-top: 28px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    color: white;
+    border: none;
+    padding: 20px 52px;
+    font-size: 1.45rem;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 16px 32px rgba(212, 47, 47, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(217, 64, 77, 0.45);
+}
+
+.profit-image-wrap {
+    margin-top: 36px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+    max-width: 1120px;
+    width: min(100%, 1120px);
+    display: flex;
+    justify-content: center;
+}
+
+.profit-image-wrap img {
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+    transform: translateY(1px);
+}
+
+.hidden {
+    display: none;
+}
+
+.bonus { color: #8bc34a; text-align: center; margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo {
+        gap: 10px;
+        padding: 10px 14px;
+    }
+
+    .hero {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: clamp(2.4rem, 8vw, 3.2rem);
+        letter-spacing: 0.08em;
+    }
+
+    h1::after {
+        bottom: -28px;
+        padding: 5px 14px;
+        font-size: 0.8rem;
+    }
+
+    .stats {
+        gap: 16px;
+        margin: 30px 0;
+    }
+
+    .stat-item {
+        width: calc(50% - 16px);
+        padding: 20px 14px;
+        border-radius: 22px;
+    }
+
+    .stat-item span {
+        font-size: 1.9rem;
+    }
+
+    .stat-item p {
+        font-size: 0.92rem;
+    }
+
+    .info-box {
+        margin-top: 18px;
+        padding: 20px 22px;
+    }
+
+    .cta-area {
+        margin-top: 24px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 18px 22px;
+        font-size: 1.25rem;
+    }
+
+    .profit-image-wrap {
+        margin-top: 28px;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .profit-image-wrap img {
+        max-width: 100%;
+        border-radius: 16px;
+    }
+}

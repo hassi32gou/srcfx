@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SRCFX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo logo-fixed"><span>SRCFX</span></div>
+
+    <main>
+        <div class="hero">
+            <h1>国内人気ブローカートレーダー</h1>
+            
+            <div class="stats">
+                <div class="stat-item"><span>13ヶ月</span><p>期間</p></div>
+                <div class="stat-item"><span>2回</span><p>マイナス月</p></div>
+                <div class="stat-item"><span>401%</span><p>トータル収益</p></div>
+                <div class="stat-item"><span>2552%</span><p>複利収益</p></div>
+            </div>
+
+            <div class="info-box">
+                <h2>HA trade</h2>
+                <p>
+                    長年、国内証券のレバの低い国内ブローカーで成果を出してきた大物トレーダーが<br>
+                    コピトレを提供して下さることになりました。<br>
+                    ただ余りにもロジックをバラしたくないためPAMM（ポジションが見れません）。<br>
+                    しかし、PAMMなので低資金からでも開始出来ます。<br>
+                    ブローカーは、有名なMYFX Marketsです。
+                </p>
+            </div>
+
+            <div class="cta-area">
+                <button class="cta-btn" id="profitBtn">利益表</button>
+            </div>
+
+            <div class="profit-image-wrap hidden" id="profitImageWrap">
+                <img id="profitImage" src="C:\Users\syouhei\Downloads\2FB84706-67FE-4C3A-8D6A-E6BA23F75027.jpg" alt="利益表画像">
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('profitBtn').addEventListener('click', function(event) {
+            const wrap = document.getElementById('profitImageWrap');
+            wrap.classList.toggle('hidden');
+            this.textContent = wrap.classList.contains('hidden') ? '利益表' : '閉じる';
+        });
+    </script>
+</body>
+</html>
