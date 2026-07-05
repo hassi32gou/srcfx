@@ -38,8 +38,8 @@ body {
 }
 
 .logo span {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 800;
     letter-spacing: 0.05em;
     color: #ffffff;
 }
@@ -108,8 +108,8 @@ nav ul li:hover::after {
 }
 
 .logo span {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 800;
     letter-spacing: 0.05em;
     color: #ffffff;
 }
@@ -184,7 +184,7 @@ h1 {
     background: rgba(255, 255, 255, 0.08);
     box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.08);
 }
-.stat-item span { display: block; position: relative; font-size: 2.3rem; font-weight: 900; text-shadow: 0 0 18px rgba(255, 215, 102, 0.65); }
+.stat-item span { display: block; position: relative; font-size: clamp(2.4rem, 4vw, 3.2rem); font-weight: 900; text-shadow: 0 0 18px rgba(255, 215, 102, 0.65); }
 .stat-item p { position: relative; margin: 12px 0 0; font-size: 1rem; color: #f8e27f; opacity: 0.96; letter-spacing: 0.04em; }
 
 .info-box {
@@ -289,7 +289,16 @@ h1 {
 
     .logo {
         gap: 10px;
-        padding: 10px 14px;
+        padding: 12px 16px;
+    }
+
+    .logo::before {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo span {
+        font-size: 1.55rem;
     }
 
     .hero {
@@ -318,12 +327,16 @@ h1 {
         border-radius: 22px;
     }
 
+    .logo span {
+        font-size: 1.55rem;
+    }
+
     .stat-item span {
-        font-size: 1.9rem;
+        font-size: clamp(2.45rem, 6vw, 3rem);
     }
 
     .stat-item p {
-        font-size: 0.92rem;
+        font-size: 1rem;
     }
 
     .info-box {
